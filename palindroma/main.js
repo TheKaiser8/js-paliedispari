@@ -14,7 +14,6 @@ console.log(word);
 let wordSpelling;
 let wordSpellingReverse;
 
-
 function palindromes(word) {
 
     for (let i = 0; i < word.length; i++) {
@@ -31,20 +30,14 @@ function palindromes(word) {
     return false;
 }
 
+if( palindromes(word) === true) {
+    console.log(`La parola "${word}" è palindroma`);
+    alert(`La parola "${word}" è palindroma!`);
+} else {
+    console.log(`La parola "${word}" NON è palindroma`);
+    alert(`La parola "${word}" NON è palindroma!`);
+}
+
 // Test
-console.log('Inserisco la parola "osso" e mi aspetto true', palindromes(word));
-console.log('Inserisco la parola "ciao" e mi aspetto false', palindromes(word));
-
-
-
-// const palindrome = word;
-// function palindromes (word) {
-//     for (let i = word.length; i >= 0; i--) {
-//         if( palindrome === word ) {
-//             console.log("La parola è palindroma");
-//             return true;
-//         }
-//     }
-//     return false;
-// }
-// console.log(palindromes(word));
+// console.log('Inserisco la parola palindroma e mi aspetto true', palindromes(word));
+// console.log('Inserisco la parola NON palindroma e mi aspetto false', palindromes(word));
