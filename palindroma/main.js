@@ -6,12 +6,12 @@
 /*------------------
     FUNCTIONS
 --------------------*/
-function palindromes(word) {
+function isPalindrome(word) {
     for (let i = 0; i < word.length; i++) {
         console.log(word[i]);
         wordSpelling = word[i];
     }
-    for (let i = word.length; i >= 0; i--) {
+    for (let i = word.length - 1; i >= 0; i--) {
         console.log(word[i]);
         wordSpellingReverse = word[i];
     }
@@ -28,7 +28,7 @@ console.log(word);
 let wordSpelling;
 let wordSpellingReverse;
 
-if( palindromes(word) === true) {
+if( isPalindrome(word) === true) {
     console.log(`La parola "${word}" è palindroma`);
     alert(`La parola "${word}" è palindroma!`);
 } else {
