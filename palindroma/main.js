@@ -6,16 +6,7 @@
 /*------------------
     FUNCTIONS
 --------------------*/
-/*------------------
-    MAIN
---------------------*/
-const word = prompt("Inserisci una parola");
-console.log(word);
-let wordSpelling;
-let wordSpellingReverse;
-
 function palindromes(word) {
-
     for (let i = 0; i < word.length; i++) {
         console.log(word[i]);
         wordSpelling = word[i];
@@ -29,6 +20,13 @@ function palindromes(word) {
     }
     return false;
 }
+/*------------------
+    MAIN
+--------------------*/
+const word = prompt("Inserisci una parola");
+console.log(word);
+let wordSpelling;
+let wordSpellingReverse;
 
 if( palindromes(word) === true) {
     console.log(`La parola "${word}" è palindroma`);
@@ -37,7 +35,3 @@ if( palindromes(word) === true) {
     console.log(`La parola "${word}" NON è palindroma`);
     alert(`La parola "${word}" NON è palindroma!`);
 }
-
-// Test
-// console.log('Inserisco la parola palindroma e mi aspetto true', palindromes(word));
-// console.log('Inserisco la parola NON palindroma e mi aspetto false', palindromes(word));
