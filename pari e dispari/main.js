@@ -40,5 +40,18 @@ const sum = userNumber + cpuNumber;
 console.log(`La somma dei due numeri è: ${sum}`);
 
 // 5. Definisco se la somma dei due numeri è pari o dispari (usando una funzione)
+function isEven() {
+    if( sum % 2 === 0 ) {
+        console.log(`Il risultato della somma è: "pari"`);
+        return true;
+    }
+    console.log(`Il risultato della somma è "dispari"`);
+    return false;
+}
 
 // 6. Dichiaro il vincitore
+if( (isEven() === true && userChoice === "pari")  || (isEven() === false && userChoice === "dispari") ) {
+    alert("Complimenti, hai VINTO contro la CPU!");
+} else {
+    alert("Mi dispiace, hai PERSO contro la CPU!");
+}
