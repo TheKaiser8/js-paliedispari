@@ -29,6 +29,11 @@ while( isNaN(userNumber) || !(userNumber >= 1 && userNumber < 6)) {
 console.log(`Il numero scelto dall'utente è: ${userNumber}`);
 
 // 3. Genero un numero random (sempre da 1 a 5) per il computer (usando una funzione)
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+const cpuNumber = getRndInteger(1, 5);
+console.log(`Il numero generato per la CPU è: ${cpuNumber}`);
 
 // 4. Sommo il numero scelto dall'utente e quello generato per la CPU
 
