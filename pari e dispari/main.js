@@ -36,6 +36,8 @@ const cpuNumber = getRndInteger(1, 5);
 console.log(`Il numero generato per la CPU è: ${cpuNumber}`);
 
 // 4. Sommo il numero scelto dall'utente e quello generato per la CPU
+const sum = userNumber + cpuNumber;
+console.log(`La somma dei due numeri è: ${sum}`);
 
 // 5. Definisco se la somma dei due numeri è pari o dispari (usando una funzione)
 
