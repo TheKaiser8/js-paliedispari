@@ -21,6 +21,12 @@ while( !(userChoice === "pari" || userChoice === "dispari") ) {
 console.log(`La scelta dell'utente è: "${userChoice}"`);
 
 // 2. Chiedo all'utente di inserire un numero tra 1 e 5 ed effettuo la validazione del dato inserito
+let userNumber = Number( prompt("Inserisci un numero tra 1 e 5") );
+while( isNaN(userNumber) || !(userNumber >= 1 && userNumber < 6)) {
+    alert(`Attenzione! Devi inserire un numero e il numero deve essere compreso tra 1 e 5!`);
+    userNumber = Number( prompt("Inserisci un numero tra 1 e 5") );
+}
+console.log(`Il numero scelto dall'utente è: ${userNumber}`);
 
 // 3. Genero un numero random (sempre da 1 a 5) per il computer (usando una funzione)
 
